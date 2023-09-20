@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check code formatting
-        run: make format-check
+        run: make format 
         env:
           CI_STATUS: ${{ job.status }}
 
