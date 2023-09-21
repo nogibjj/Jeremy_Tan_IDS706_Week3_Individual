@@ -1,3 +1,8 @@
+"""
+Test goes here
+
+"""
+
 from mylib.lib import (
     load_and_preprocess,
     process_mean,
@@ -5,6 +10,8 @@ from mylib.lib import (
     process_median,
     process_std,
 )
+from directory_tree import display_tree
+
 
 example_csv = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-age/congress-terms.csv"
 
@@ -33,3 +40,4 @@ def test_stats():
 if __name__ == "__main__":
     test_load_and_preprocess()
     test_stats()
+    print(display_tree(string_rep=True, show_hidden=True))

@@ -1,37 +1,60 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+[![Install](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/install.yml)
+[![Lint](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/lint.yml)
+[![Format](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/format.yml)
+[![Test](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/test.yml)
+## Project #1: Continuous Integration using GitHub Actions of Python Data Science
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+## Youtube Video Link
+![Youtube Link](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/actions/workflows/test.yml)
 
+### File Structure 
+```
+Jeremy_Tan_IDS706_Week3_Individual/
+├── .devcontainer/
+│   ├── devcontainer.json
+│   └── Dockerfile
+├── .github/
+│   └── workflows/
+│       ├── format.yml
+│       ├── install.yml
+│       ├── lint.yml
+│       └── test.yml
+├── .gitignore
+├── Dockerfile
+├── LICENSE
+├── main.ipynb
+├── main.py
+├── Makefile
+├── mylib/
+│   ├── __init__.py
+│   └── lib.py
+├── README.md
+├── repeat.sh
+├── requirements.txt
+├── setup.sh
+├── test_lib.py
+└── test_main.py
+```
+### Purpose of Project
+The purpose of this project is to build upon the last three mini-projects to simulate best practices of continuos integration in Data Science projects. I use my the Congress dataset provided by FiveThirtyEight to produce sample descriptive statistics and vizualizations. 
 
+## Preparation 
+1. Open codespaces 
+2. Wait for container to be built and pinned requirements from `requirements.txt` to be installed 
+3. If running locally, `git clone` the repository and use `make install`
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+## Check format and test errors
+1. Format code `make format`
+2. Lint code `make lint`
 
-Things included are:
+<img width="828" alt="Screenshot 2023-09-20 at 8 28 38 PM" src="https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/assets/36715338/78b644b0-12e4-48df-9026-5676e2f00111">
 
-* `Makefile`
+3. Test code `make test`
 
-* `Pytest`
+<img width="1374" alt="Screenshot 2023-09-20 at 8 28 51 PM" src="https://github.com/nogibjj/Jeremy_Tan_IDS706_Week3_Individual/assets/36715338/8f7c73fe-bf4c-47ae-80f1-c32ce35a9465">
 
-* `pandas`
+## Descriptive statistics and vizualizations 
+The descriptive statistics and vizualizations are generated whenever an individaul pushes to my repository via `actions-user` using `make generate_and_push`. You can find them here !["markdown"](/blob/main/congress_summary.md)
 
-* `Ruff`:  
-
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
-
-* `Dockerfile`
-
-* `GitHub copilot`
-
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions`
-
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
-
-
-
+## References 
+https://github.com/nogibjj/python-ruff-template
