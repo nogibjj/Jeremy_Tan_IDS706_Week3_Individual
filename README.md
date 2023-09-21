@@ -36,7 +36,7 @@ Jeremy_Tan_IDS706_Week3_Individual/
 └── test_main.py
 ```
 ### Purpose of Project
-The purpose of this project is to build upon the last three mini-projects to simulate best practices of continuos integration in Data Science projects. I use the Congress dataset provided by FiveThirtyEight to produce sample descriptive statistics and vizualizations. 
+The purpose of this project is to build upon the last three mini-projects to simulate best practices of continuous integration in Data Science projects. I use the Congress dataset provided by FiveThirtyEight to produce sample descriptive statistics and visualizations.
 
 ## Preparation 
 1. Open codespaces 
