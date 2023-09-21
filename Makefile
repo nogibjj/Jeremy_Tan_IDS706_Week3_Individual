@@ -38,4 +38,3 @@ generate_and_push:
 	else \
 		echo "No changes to commit. Skipping commit and push."; \
 	fi
-
