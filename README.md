@@ -7,7 +7,7 @@
 ## Youtube Video Link
 [Youtube Link](https://www.youtube.com/)
 
-### File Structure 
+### Directory Tree Structure 
 ```
 Jeremy_Tan_IDS706_Week3_Individual/
 ├── .devcontainer/
