@@ -5,7 +5,7 @@
 ## Project #1: Continuous Integration using GitHub Actions of Python Data Science
 
 ## Youtube Video Link
-[Youtube Link](https://www.youtube.com/)
+[Youtube Link](https://www.youtube.com/watch?v=rPrHaqKwjWI)
 
 ### Directory Tree Structure 
 ```
